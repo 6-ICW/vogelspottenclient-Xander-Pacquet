@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vogelspotter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s ease;
+        padding: 20px;
+      }
+      .counter {
+        margin-top: 20px;
+        font-size: 1.2em;
+      }
+      button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vogelspotter</h1>
+
+    <label for="vogelSelect">Kies een vogelsoort:</label>
+    <select id="vogelSelect">
+      <option value="merel">Merel</option>
+      <option value="roodborst">Roodborst</option>
+      <option value="koolmees">Koolmees</option>
+      <option value="mus">Mus</option>
+    </select>
+
+    <div class="counter">
+      Aantal keer gespot: <span id="count">0</span>
+      <button id="plusBtn">+</button>
+    </div>
+  </body>
+</html>
